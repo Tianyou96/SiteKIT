@@ -1,0 +1,5 @@
+
+#Example command
+SiteKIT_PATH=$(cd ../../;pwd)
+$SiteKIT_PATH/SiteKIT --aa_dir Sphenisciformes_genes  --group_id Sphenisciformes -o Sphenisciformes_AA
+
