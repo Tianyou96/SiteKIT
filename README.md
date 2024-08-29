@@ -1,5 +1,7 @@
 # SiteKIT
 
+**SiteKIT: a python toolkit for discovering the association between divergent sites and biological traits**
+
 SiteKIT can rapidly and accurately identify key sites that may be linked to specific traits. Site-trait association analysis aim to identify associations of biological traits with sites mutations. These mutations may affect gene function, thereby altering the phenotypic characteristics of organisms or causing diseases. SiteKIT provides an opportunity to gain insights into the complex relationship between site mutations and biological traits.
 
 # Installation
@@ -7,15 +9,30 @@ SiteKIT can rapidly and accurately identify key sites that may be linked to spec
 There are two ways to use SiteKIT:
 
 1. **Using the standalone executable (SiteKIT):**
+   
    - This approach involves using a pre-packaged executable that contains all necessary dependencies, making it easy to run without needing to set up a specific environment.
+   
+     ```
+     chmod +x SiteKIT
+     ```
+   
+     
+   
 2. **Configuring environment dependencies via `requirements.txt` and using the Python script (SiteKIT.py):**
+   
    - In this method, you configure the required packages by listing them in a `requirements.txt` file. Then, you can run the Python script (SiteKIT.py) within an environment that has these dependencies installed. The version of Python is 3.12.5
+   
+     ```
+     pip install -r requirements.txt
+     ```
+   
+     
 
 # Tutorial
 
 ### Parameters
 
-The `SiteKIT` tool supports various parameters to customize its behavior. You can view the help instructions by running `SiteKIT -h`.
+The `SiteKIT` tool supports various parameters to customize its behaviour. You can view the help instructions by running `SiteKIT -h`.
 
 - **`--aa_dir`**: The required input folder containing multiple sequence alignments (MSAs) of amino acids.
 - **`--group_id`**: Specifies IDs or prefixes for trait groups. Include the trait group prefix list in single quotes ('') separated by commas (,). Do not include spaces. For example: `'sample1,sample2,...'`.
