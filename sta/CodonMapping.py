@@ -66,7 +66,7 @@ def Map_Codon_module(site_df,alignment_folder,output_dir):
                 align_id=align_info.id
                 codon = align_info.seq[Codon_Start:Codon_End]
                 align_info_dict[align_id]=codon
-            Codon_Position = f"{Codon_Start}-{Codon_End}"
+            Codon_Position = f"{(row['Codon Start Loc.'])}-{Codon_End}"
             codon_list = [align_info_dict[seq_id] for seq_id in seq_id_list]
             gene_site_codon_output_table.loc[index] = [gene_id,row['Score'], Codon_Position] + codon_list
         gene_site_codon_output_table.to_csv(f"{output_dir}/{gene_id}_codon.csv")
